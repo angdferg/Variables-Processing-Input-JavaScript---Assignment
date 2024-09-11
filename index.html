@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+
+
+<body>
+    <!-- DISPLAY LOCATION -->
+    <h1 id="display"></h1>
+    </body>
+    
+    
+        <script>
+            //BEGIN
+            alert("This is a Tip Calculator")
+    
+            //Add code to the app to ask the user for a number via a prompt call
+            let num1 = prompt("1. Enter Bill Amount: ");
+            num1 = parseFloat(num1);
+    
+    
+            let num2 = prompt("2. Enter tax (%): ");
+            num2 = parseFloat(num2);
+    
+            //CALCULATIONS
+            alert("Calculating: "+num2+"% "+" of "+num1+" =");
+            percentage= num2/100;
+            calulation=num1*percentage;
+            console.log("Calculation: "+ (num1+calulation));
+    
+    
+    //The number should be displayed on a tag on the corresponding web page with a prefix of Quantity. 
+            let display = document.querySelector("#display");
+            display.textContent = "Total Bill = $"+ (num1+calulation);   
+ 
+            console.log("Calculation: "+num2+"% "+" of "+num1+" = "+ calulation);   
+            console.log("Total Bill = $"+ (num1+calulation));   
+
+        </script>
+
+
+
+</html>
